@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" class="css">
+    <script src="script.js"></script>
+    <title>Gross Profit Margin Calculator</title>
+</head>
+<body>
+    <h1 class="heading">Gross Profit Margin Calculator</h1>
+    <p class="explanation">This is a tool designed to help retail assistants and business owners calculate the profit margin on a specific sale. It can also calculate what the sale price of an item should be, to meet a GP target.</p>
+    <div class="flex-container">
+        <div class="profitCalc">
+            <h2>Profit Margin Calculator</h2>
+            <!-- Profit Margin Calc Here-->
+            <p>Enter your sale price and and cost.</p>
+            <div class="inputs">
+                <label for="saleprice">Sale Price: $</label>
+                <input type="text" id="saleprice"><br>
+                <label for="cost">Your Cost: $</label>
+                <input type="text" id= "cost">
+                <button onclick="calc()">calculate</button>
+            </div>
+            <p>Your profit margin is:<span id="result"> </span></p>
+            <!-- <p id="result"></p> -->
+        </div>
+        <div class="saleCalc">
+            <h2>Sale price Calculator</h2>
+            <!-- Sale price Calc Here-->
+            <p>Enter your desired profit margin and cost.</p>
+            <label for="margin">Desired Profit Margin (%):</label>
+            <input type="text" id="margin"> <br>
+            <label for="cost">Your Cost $:</label>
+            <input type = "text" id= "cost2">
+            <button onclick="calcMargin()">calculate</button>
+            <p>You sale price should be $<span id = "result2"></span>
+                <br>
+                to achieve your desired profit margin.</p>
+        </div>
+    </div>
+</body>
+</html>
