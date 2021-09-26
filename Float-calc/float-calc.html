@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Float Calculator</title>
+</head>
+<body>
+    <h1>Float Calculator</h1>
+    <p>This is a tool to assist with calculating the till takings.</p>
+    <p>Enter your desired float value.</p>
+    <label for="float">Float target: $</label>
+    <input type="text" id="float">
+    <p>Please enter the <em>quantity</em> of notes and coins.</p>
+    <p>For example: if there are five ten cent coins, enter the value 5, not 0.5. If there are no coins or notes for a field, remember to put "0".</p>
+    <h2>Quantity of notes and coins:</h2>
+    <div class="grid-container">
+        
+        
+        <div class="ten-cent">
+            <label for="10c">10&cent;</label>
+            <input type="text" id = "10c">
+        </div>
+        <div class="twenty-cent">
+            <label for="20c">20&cent;</label>
+            <input type="text" id="20c">
+        </div>
+        <div class="fifty-cent">
+            <label for="50c">50&cent;</label>
+            <input type="text" id="50c">
+        </div>
+        <div class="one-dollar">
+            <label for="$1">$1</label>
+            <input type="text" id="$1">
+        </div>
+        <div class="two-dollar">
+            <label for="$2">$2</label>
+            <input type="text" id="$2">
+        </div>
+        <div class="five-dollar">
+            <label for="$5">$5</label>
+            <input type="text" id="$5">
+        </div>
+        <div class="ten-dollar">
+            <label for="$10">$10</label>
+            <input type="text" id="$10">
+        </div>
+        <div class="twenty-dollar">
+            <label for="$20">$20</label>
+            <input type="text" id="$20">
+        </div>
+        <div class="fifty-dollar">
+            <label for="$50">$50</label>
+            <input type="text" id="$50">
+        </div>
+        <div class="hundred-dollar">
+            <label for="$100">$100</label>
+            <input type="text" id="$100">
+        </div>
+        <button onclick="calc()" class="calculate">Calculate</button>
+    </div>
+    <p class="takings">Your takings are: $<span id="output"></span></p>
+</body>
+</html>
