@@ -14,5 +14,12 @@ function calc(){
         let fiftyd = parseInt(document.getElementById("$50").value) * 50;
         let hundred = parseInt(document.getElementById("$100").value) * 100;
     //This function will add all of the coin and note varibles together and subtract the float variable from this total and output the result to the <span> with the id of "result" on the click of calulate.
-    let output = document.getElementById("output").innerHTML = (tenc + twentyc + fiftyc + oned + fived + tend + twentyd + fiftyd + hundred)-(float)
+    let output = document.getElementById("output").innerHTML = ((tenc + twentyc + fiftyc + oned + twod + fived + tend + twentyd + fiftyd + hundred)-(float)).toFixed(2)
+    console.log(typeof output)
+    if (isNaN(output)) {
+        document.getElementById("output").innerHTML = "please add numbers to all fields"
+    }
+    if(float < 0){
+        document.getElementById("output").innerHTML = "Invalid float"
+    }
 }
