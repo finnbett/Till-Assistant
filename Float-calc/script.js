@@ -18,10 +18,11 @@ function calc10c() {
 
 function calc20c() {
     var twentyc = (parseInt(document.getElementById("20c").value) * 0.2).toFixed(2)
+    console.log(twentyc)
     if(twentyc < 1) {
         document.getElementById('20ctotal').innerHTML = twentyc + '&#162;'
     } else {
-        document.getElementById('20total').innerHTML= '$' + twentyc
+        document.getElementById('20ctotal').innerHTML= '$' + twentyc
     }
 
 }
@@ -41,6 +42,7 @@ function calc$1() {
 }
 function calc$2() {
     var twod = (parseInt(document.getElementById("$2").value) * 2).toFixed(2)
+    console.log(twod)
     document.getElementById('$2total').innerHTML= '$' + twod
     
 
